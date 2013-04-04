@@ -1,20 +1,16 @@
-{ "name": "geolocation"
+{ "name": "webinos-api-geolocation"
 , "publishConfig": { "tag": "alpha" }
 , "description": "Geolocation API"
 , "keywords": [ "webinos", "geolocation", "API"]
 , "version": "0.0.1"
-, "homepage": "http://webinos.org/"
+, "homepage": "http://www.webinos.org"
+,  "bugs": "http://jira.webinos.org"
 , "author": "Andre Paul <andre.paul@fokus.fraunhofer.de>"
 , "repository":
   { "type": "git"
-  , "url": "http://dev.webinos.org/git/wp4.git"
+  , "url": "git://github.com/webinos/webinos-api-geolocation.git"
   }
-, "bugs":
-  { "email": "webinos-wp4-ml@fokus.fraunhofer.de"
-  , "url": ""
-  }
-, "directories": { "lib": "./lib"
-                 }
+, "directories": { "lib": "./lib", "test": "./test" }
 , "main": "./lib/webinos.geolocation.rpc.js"
 , "dependencies":
   {
@@ -22,4 +18,7 @@
 , "bundleDependencies":
   [
   ]
+, "engines": {
+    "node": ">= 0.6.0"
+  }
 }
