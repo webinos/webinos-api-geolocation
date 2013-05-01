@@ -1,24 +1,37 @@
-{ "name": "webinos-api-geolocation"
-, "publishConfig": { "tag": "alpha" }
-, "description": "Geolocation API"
-, "keywords": [ "webinos", "geolocation", "API"]
-, "version": "0.0.1"
-, "homepage": "http://www.webinos.org"
-,  "bugs": "http://jira.webinos.org"
-, "author": "Andre Paul <andre.paul@fokus.fraunhofer.de>"
-, "repository":
-  { "type": "git"
-  , "url": "git://github.com/webinos/webinos-api-geolocation.git"
-  }
-, "directories": { "lib": "./lib", "test": "./test" }
-, "main": "./lib/webinos.geolocation.rpc.js"
-, "dependencies":
-  {
-  }
-, "bundleDependencies":
-  [
-  ]
-, "engines": {
+{
+  "name": "webinos-api-geolocation",
+  "publishConfig": {
+    "tag": "alpha"
+  },
+  "description": "Geolocation API",
+  "keywords": [
+    "webinos",
+    "geolocation",
+    "API"
+  ],
+  "version": "0.0.1",
+  "homepage": "http://www.webinos.org",
+  "bugs": "http://jira.webinos.org",
+  "author": "Andre Paul <andre.paul@fokus.fraunhofer.de>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/webinos/webinos-api-geolocation.git"
+  },
+  "directories": {
+    "lib": "./lib",
+    "test": "./test"
+  },
+  "main": "./lib/webinos.geolocation.rpc.js",
+  "dependencies": {},
+  "devDependencies": {
+    "zombie": "~2.0.0-alpha15",
+    "jasmine-node": "x.x.x"
+  },
+  "bundleDependencies": [],
+  "engines": {
     "node": ">= 0.6.0"
+  },
+  "scripts": {
+    "travis-api-test": "./test/tools/travis-test.sh"
   }
 }
