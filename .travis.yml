@@ -4,5 +4,6 @@ node_js:
 install: npm install --save-dev
 before_install:
  - sudo apt-get update -qq
- - npm i -g jasmine-node
+ - sudo apt-get install -qq g++ libssl-dev gnome-keyring libgnome-keyring-dev
+ - npm i -g jasmine-node node-gyp
 script: npm run-script travis-api-test
