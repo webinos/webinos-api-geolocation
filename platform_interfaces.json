@@ -1,0 +1,5 @@
+{
+  "android": {
+    "GeolocationImpl": "org.webinos.android.impl.GeolocationImpl"
+  }
+}
