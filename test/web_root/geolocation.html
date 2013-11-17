@@ -75,7 +75,7 @@
                 case error.TIMEOUT: alert("retrieving position timed out");
                 break;
 
-                default: alert("unknown error code = " + error.code + "; message = " + error.message);
+                default: alert("An error has occurred.\n\ncode = " + error.code + "\nmessage = " + error.message +"\ndata = " + JSON.stringify(error.data, undefined, 2));
                 break;
             }
         }
