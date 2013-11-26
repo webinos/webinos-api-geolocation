@@ -1,6 +1,6 @@
 # webinos geolocation API #
 
-**Service Type**: http://www.w3.org/ns/api-perms/geolocation
+**Service Type**: http://webinos.org/api/w3c/geolocation
 
 The geolocation API is based on W3C geolocation.
 
@@ -23,9 +23,9 @@ For developers that want to tweak the API, you should fork this repository and c
 
 ## Getting a reference to the service ##
 
-To discover the service you will have to search for the "http://www.w3.org/ns/api-perms/geolocation" type. Example:
+To discover the service you will have to search for the "http://webinos.org/api/w3c/geolocation" type. Example:
 
-	var serviceType = "http://www.w3.org/ns/api-perms/geolocation";
+	var serviceType = "http://webinos.org/api/w3c/geolocation";
 	webinos.discovery.findServices( new ServiceType(serviceType), 
 		{ 
 			onFound: serviceFoundFn, 
@@ -46,7 +46,7 @@ Alternatively you can use the webinos dashboard to allow the user choose the geo
          module:'explorer',
 	     data:{
          	service:[
-            	'http://www.w3.org/ns/api-perms/geolocation'
+            	'http://webinos.org/api/w3c/geolocation'
          	],
             select:"services"
          }
@@ -66,4 +66,3 @@ Once you have a reference to an instance of a service you can use the following 
 
 - [Specifications](http://webinos.org/api/w3c/geolocation)
 - [Examples](https://github.com/webinos/webinos-api-geolocation/wiki/Examples)
-
