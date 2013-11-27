@@ -62,19 +62,22 @@ Once you have a reference to an instance of a service you can use the following 
 
 ###getCurrentPosition(positionCB, positionErrorCB, positionOptions)
 
-getCurrentPosition method retrieves the current position, The param positionCB returns a Success callback.
-The param positionErrorCB returns an Error callback.
-The param positionOptions returns Optional options.
+getCurrentPosition method retrieves the current position
+- The param positionCB is called with the current position in case of success
+- The param positionErrorCB an Error callback.
+- positionOptions is an optional object to configure the behaviour of getCurrentPosition.
 
 ###watchPosition(positionCB, positionErrorCB, positionOptions)
 
-watchPosition method registers a listener for position updates. The param positionCB Callbacks for position updates.
-The param positionErrorCB returns Error callback.
-The param positionOptions returns Optional options.
+watchPosition method registers a listener for position updates. 
+- The param positionCB Callbacks for position updates.
+- The param positionErrorCB an Error callback.
+- The param positionOptions an Optional options.
 
 ###clearWatch(watchId)
 
-ClearWatch method clears a listener. The param watchId The id as returned by watchPosition to clear.
+clearWatch method clears a listener registered with watch Position
+- The watchId parameter as returned by
 
 
 ## Links ##
