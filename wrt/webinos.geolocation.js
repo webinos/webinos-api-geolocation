@@ -23,11 +23,16 @@
  * @param obj Object containing displayName, api, etc.
  */
 WebinosGeolocation = function (obj) {
-	this.base = WebinosService;
-	this.base(obj);
+	WebinosService.call(this, obj);
 };
-
-WebinosGeolocation.prototype = new WebinosService;
+// Inherit all functions from WebinosService
+WebinosGeolocation.prototype = Object.create(WebinosService.prototype);
+// The following allows the 'instanceof' to work properly
+WebinosGeolocation.prototype.constructor = WebinosGeolocation;
+// Register to the service discovery
+_webinos.registerServiceConstructor("http://webinos.org/api/w3c/geolocation", WebinosGeolocation);
+// If you want to enable the old URI, uncomment the following line
+//_webinos.registerServiceConstructor("http://www.w3.org/ns/api-perms/geolocation", WebinosGeolocation);
 
 /**
  * To bind the service.
