@@ -60,6 +60,24 @@ Alternatively you can use the webinos dashboard to allow the user choose the geo
 
 Once you have a reference to an instance of a service you can use the following methods:
 
+###getCurrentPosition(positionCB, positionErrorCB, positionOptions)
+
+getCurrentPosition method retrieves the current position
+- The param positionCB is called with the current position in case of success
+- The param positionErrorCB an Error callback.
+- positionOptions is an optional object to configure the behaviour of getCurrentPosition.
+
+###watchPosition(positionCB, positionErrorCB, positionOptions)
+
+watchPosition method registers a listener for position updates. 
+- The param positionCB Callbacks for position updates.
+- The param positionErrorCB an Error callback.
+- The param positionOptions an Optional options.
+
+###clearWatch(watchId)
+
+clearWatch method clears a listener registered with watch Position
+- The watchId parameter as returned by
 
 
 ## Links ##
