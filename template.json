@@ -1,0 +1,54 @@
+{
+    "apiURI": {
+        "type": "text",
+        "className": ["hidden"],
+        "defaultValue": ""
+    },
+    "params": {
+        "type": "object",
+        "className": ["optional"],
+        "content": {
+            "instances": {
+                "type": "array",
+                "caption": "Geolocation Services",
+                "content": {
+                    "id": {
+                        "type": "text",
+                        "className": ["hidden", "optional"],
+                        "defaultValue": ""
+                    },
+                    "params": {
+                        "type": "object",
+                        "className": ["optional"],
+                        "content": {
+                            "connector": {
+                                "type": "select",
+                                "values": {
+                                    "Select implementation:": [
+                                        {
+                                            "value": "geoip",
+                                            "text": "IP"
+                                        },
+                                        {
+                                            "value": "android",
+                                            "text": "Android"
+                                        },
+                                        {
+                                            "value": "simulator",
+                                            "text": "Car Simulator"
+                                        },
+                                        {
+                                            "value": "most",
+                                            "text": "Car Emulator"
+                                        }
+                                    ]
+                                },
+                                "defaultValue": "geoip"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
