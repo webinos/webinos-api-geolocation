@@ -1,5 +1,13 @@
 {
-  "params":{
-    "connector": "geoip"
-  }
+    "apiURI": "http://webinos.org/api/w3c/geolocation",
+    "params": {
+        "instances": [
+            {
+                "id": "",
+                "params": {
+                    "connector": "*default"
+                }
+            }
+        ]
+    }
 }
