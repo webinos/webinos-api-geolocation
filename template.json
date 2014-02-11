@@ -26,6 +26,9 @@
                                 "values": {
                                     "Select implementation:": [
                                         {
+                                            "value": "*default",
+                                            "text": "Device default"
+                                        },{
                                             "value": "geoip",
                                             "text": "IP"
                                         },
@@ -43,7 +46,7 @@
                                         }
                                     ]
                                 },
-                                "defaultValue": "geoip"
+                                "defaultValue": "*default"
                             }
                         }
                     }
